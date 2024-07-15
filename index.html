@@ -8,7 +8,7 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Site Metas -->
-  <title>Feminite Sublime Market</title>
+  <title>Afro Hair</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Custom CSS -->
   <style>
     /* Footer Custom CSS */
@@ -59,26 +60,74 @@
   </style>
 </head>
 <body>
-  <!-- Modern Header Start -->
-  <header class="modern-header">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4 col-6">
-          <div class="logo">
-            <a href="index.html">Afro Hair Salon</a>
-          </div>
+<!-- Modern Header Start -->
+<header class="modern-header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 text-center">
+        <div class="logo">
+          <a href="index.html">Afro Hair Salon</a>
+          <img src="images/logo.png" alt="Afro Hair Salon Logo" class="logo-image">
         </div>
-        <div class="col-md-8 col-6 text-right">
-          <div class="header-buttons">
-            <a href="https://wa.me/22794284571" class="contact-button">
-              Contactez-nous <i class="fa fa-whatsapp"></i>
-            </a>
-          </div>
         </div>
       </div>
+      <div class="col-12 text-center">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À propos de nous</a></li>
+            <li><a href="#">Nos produits</a></li>
+            <li><a href="https://wa.me/22794284571">Contactez-nous</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </header>
-  <!-- Modern Header End -->
+  </div>
+</header>
+<!-- Modern Header End -->
+
+<!-- Custom CSS -->
+<style>
+.modern-header .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.main-nav ul li {
+  display: inline;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.main-nav ul li a:hover {
+  color: #007BFF; /* Adjust the hover color as needed */
+}
+</style>
+
+
+<!-- Custom JS -->
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+</script>
 
   <!-- Banner Background Main Start -->
   <div class="banner_bg_main">
@@ -91,7 +140,15 @@
               <div class="row">
                 <div class="col-sm-12">
                   <h1 class="banner_taital">Livraison <br>gratuite à Niamey</h1>
-                  <div class="buynow_bt"><a href="#">Achetez maintenant</a></div>
+                  <div class="buynow_bt"><a href="#">Achetez</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h1 class="banner_taital">Votre satisfaction  <br> est notre priorité</h1>
+                  <div class="buynow_bt"><a href="#">Let's do it</a></div>
                 </div>
               </div>
             </div>
@@ -99,15 +156,23 @@
               <div class="row">
                 <div class="col-sm-12">
                   <h1 class="banner_taital">Payez via <br> Mynita , Al Izza ou par Cash</h1>
-                  <div class="buynow_bt"><a href="#">Achetez maintenant</a></div>
+                  <div class="buynow_bt"><a href="#">Achetez</a></div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row">
                 <div class="col-sm-12">
-                  <h1 class="banner_taital">Commencez <br>Votre shopping préféré</h1>
-                  <div class="buynow_bt"><a href="#">Achetez maintenant</a></div>
+                  <h1 class="banner_taital">Suivez-nous  <br> sur les réseaux sociaux</h1>
+                  <div class="buynow_bt"><a href="#">Follow us</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h1 class="banner_taital">Des services personnalisés <br>pour vous</h1>
+                  <div class="buynow_bt"><a href="#">Achetez</a></div>
                 </div>
               </div>
             </div>
@@ -165,168 +230,290 @@
   </div>
   <!-- About Us Section End -->
 
-   <!-- section de mode début -->
-<div class="fashion_section">
-  <div id="main_slider" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="container">
-          <h1 class="fashion_taital">Nos Produits</h1>
-          <div class="fashion_section_2">
-            <div class="row">
-              <div class="col-lg-4 col-sm-4">
-                <div class="box_main">
-                  <h4 class="shirt_text">Crème chantilly</h4>
-                  <p class="price_text">Prix <span style="color: #262626;">3,500F</span></p>
-                  <div class="tshirt_img"><img src="images/Pro1.jpeg" alt="Crème chantilly"></div>
-                  <p style="color: #000;">Description: Enrichie en huiles végétales et huiles essentielles, cette crème hydrate intensément et revitalise les cheveux secs et abîmés, laissant vos mèches douces et brillantes. Idéale pour une utilisation quotidienne.</p>
-                  <div class="btn_main">
-                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Crème%20chantilly%20pour%203,500F" class="acheter-maintenant" data-price="3500" data-product="Crème chantilly">Acheter</a></div>
-                    <div class="seemore_bt"><a href="#">En stock</a></div>
+
+    <!-- section de mode début -->
+    <div class="fashion_section">
+      <div id="main_slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <h1 class="fashion_taital">Nos Produits</h1>
+              <div class="fashion_section_2">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="box_main">
+                      <h4 class="shirt_text">Crème chantilly</h4>
+                      <p class="price_text">Prix <span style="color: #262626;">3,500F</span></p>
+                      <div class="tshirt_img"><img src="images/Pro1.jpeg" alt="Crème chantilly"></div>
+                      <p style="color: #000;">Description: Enrichie en huiles végétales et huiles essentielles, cette crème hydrate intensément et revitalise les cheveux secs et abîmés, laissant vos mèches douces et brillantes. Idéale pour une utilisation quotidienne.</p>
+                      <div class="btn_main">
+                        <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Crème%20chantilly%20pour%203,500F" class="acheter-maintenant" data-price="3500" data-product="Crème chantilly">Acheter</a></div>
+                        <div class="seemore_bt"><a href="#">En stock</a></div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <div class="box_main">
-                  <h4 class="shirt_text">L'huile activatrice</h4>
-                  <p class="price_text">Prix <span style="color: #262626;">4,000F</span></p>
-                  <div class="tshirt_img"><img src="images/Pro2.jpeg" alt="L'huile activatrice"></div>
-                  <p style="color: #000;">Description: Cette huile favorise la croissance des cheveux, renforce les follicules pileux, réduit les démangeaisons et les irritations du cuir chevelu, et améliore la santé globale de vos cheveux. Utilisée régulièrement, elle transforme vos cheveux, les rendant plus forts, plus longs, et plus sains.</p>
-                  <div class="btn_main">
-                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20L'huile%20activatrice%20pour%204,000F" class="acheter-maintenant" data-price="4000" data-product="L'huile activatrice">Acheter</a></div>
-                    <div class="seemore_bt"><a href="#">En stock</a></div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="box_main">
+                      <h4 class="shirt_text">L'huile activatrice</h4>
+                      <p class="price_text">Prix <span style="color: #262626;">4,000F</span></p>
+                      <div class="tshirt_img"><img src="images/Pro2.jpeg" alt="L'huile activatrice"></div>
+                      <p style="color: #000;">Description: Cette huile favorise la croissance des cheveux, renforce les follicules pileux, réduit les démangeaisons et les irritations du cuir chevelu, et améliore la santé globale de vos cheveux. Utilisée régulièrement, elle transforme vos cheveux, les rendant plus forts, plus longs, et plus sains.</p>
+                      <div class="btn_main">
+                        <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20L'huile%20activatrice%20pour%204,000F" class="acheter-maintenant" data-price="4000" data-product="L'huile activatrice">Acheter</a></div>
+                        <div class="seemore_bt"><a href="#">En stock</a></div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <div class="box_main">
-                  <h4 class="shirt_text">Sérum pousse</h4>
-                  <p class="price_text">Prix <span style="color: #262626;">3,000F</span></p>
-                  <div class="tshirt_img"><img src="images/Pro3.jpeg" alt="Sérum pousse"></div>
-                  <p style="color: #000;">Description: Ce sérum est conçu pour stimuler la croissance rapide des cheveux, renforcer les mèches de la racine à la pointe, et prévenir les pointes fourchues. Enrichi en vitamines et nutriments, il apporte une brillance naturelle et une texture soyeuse à vos cheveux.</p>
-                  <div class="btn_main">
-                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Sérum%20pousse%20pour%203,000F" class="acheter-maintenant" data-price="3000" data-product="Sérum pousse">Acheter</a></div>
-                    <div class="seemore_bt"><a href="#">En stock</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="container">
-          <h1 class="fashion_taital">Nos Produits</h1>
-          <div class="fashion_section_2">
-            <div class="row">
-              <div class="col-lg-4 col-sm-4">
-                <div class="box_main">
-                  <h4 class="shirt_text">Pousse booster</h4>
-                  <p class="price_text">Prix <span style="color: #262626;">4,000F</span></p>
-                  <div class="tshirt_img"><img src="images/Pro4.jpeg" alt="Pousse booster"></div>
-                  <p style="color: #000;">Description: Ce produit nourrissant exceptionnel apporte force et volume aux cheveux tout en favorisant une pousse rapide. Sa formule riche en nutriments revitalise les cheveux de l'intérieur, leur conférant une allure plus épaisse et plus vigoureuse.</p>
-                  <div class="btn_main">
-                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Pousse%20booster%20pour%204,000F" class="acheter-maintenant" data-price="4000" data-product="Pousse booster">Acheter</a></div>
-                    <div class="seemore_bt"><a href="#">En stock</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <div class="box_main">
-                  <h4 class="shirt_text">Crème chantilly</h4>
-                  <p class="price_text">Prix <span style="color: #262626;">3,500F</span></p>
-                  <div class="tshirt_img"><img src="images/Pro1.jpeg" alt="Crème chantilly"></div>
-                  <p style="color: #000;">Description: Enrichie en huiles végétales et huiles essentielles, cette crème hydrate intensément et revitalise les cheveux secs et abîmés, laissant vos mèches douces et brillantes. Idéale pour une utilisation quotidienne.</p>
-                  <div class="btn_main">
-                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Crème%20chantilly%20pour%203,500F" class="acheter-maintenant" data-price="3500" data-product="Crème chantilly">Acheter</a></div>
-                    <div class="seemore_bt"><a href="#">En stock</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <div class="box_main">
-                  <h4 class="shirt_text">L'huile activatrice</h4>
-                  <p class="price_text">Prix <span style="color: #262626;">4,000F</span></p>
-                  <div class="tshirt_img"><img src="images/Pro2.jpeg" alt="L'huile activatrice"></div>
-                  <p style="color: #000;">Description: Cette huile favorise la croissance des cheveux, renforce les follicules pileux, réduit les démangeaisons et les irritations du cuir chevelu, et améliore la santé globale de vos cheveux. Utilisée régulièrement, elle transforme vos cheveux, les rendant plus forts, plus longs, et plus sains.</p>
-                  <div class="btn_main">
-                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20L'huile%20activatrice%20pour%204,000F" class="acheter-maintenant" data-price="4000" data-product="L'huile activatrice">Acheter</a></div>
-                    <div class="seemore_bt"><a href="#">En stock</a></div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="box_main">
+                      <h4 class="shirt_text">Sérum pousse</h4>
+                      <p class="price_text">Prix <span style="color: #262626;">3,000F</span></p>
+                      <div class="tshirt_img"><img src="images/Pro3.jpeg" alt="Sérum pousse"></div>
+                      <p style="color: #000;">Description: Ce sérum est conçu pour stimuler la croissance rapide des cheveux, renforcer les mèches de la racine à la pointe, et prévenir les pointes fourchues. Enrichi en vitamines et nutriments, il apporte une brillance naturelle et une texture soyeuse à vos cheveux.</p>
+                      <div class="btn_main">
+                        <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Sérum%20pousse%20pour%203,000F" class="acheter-maintenant" data-price="3000" data-product="Sérum pousse">Acheter</a></div>
+                        <div class="seemore_bt"><a href="#">En stock</a></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="carousel-item">
+            <div class="container">
+              <h1 class="fashion_taital">Nos Produits</h1>
+              <div class="fashion_section_2">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="box_main">
+                      <h4 class="shirt_text">Pousse booster</h4>
+                      <p class="price_text">Prix <span style="color: #262626;">4,000F</span></p>
+                      <div class="tshirt_img"><img src="images/Pro4.jpeg" alt="Pousse booster"></div>
+                      <p style="color: #000;">Description: Ce produit nourrissant exceptionnel apporte force et volume aux cheveux tout en favorisant une pousse rapide. Sa formule riche en nutriments revitalise les cheveux de l'intérieur, leur conférant une allure plus épaisse et plus vigoureuse.</p>
+                      <div class="btn_main">
+                        <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Pousse%20booster%20pour%204,000F" class="acheter-maintenant" data-price="4000" data-product="Pousse booster">Acheter</a></div>
+                        <div class="seemore_bt"><a href="#">En stock</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="box_main">
+                      <h4 class="shirt_text">Huile réparatrice</h4>
+                      <p class="price_text">Prix <span style="color: #262626;">2,500F</span></p>
+                      <div class="tshirt_img"><img src="images/Prod6.jpeg" alt="Huile réparatrice"></div>
+                      <p style="color: #000;">Description: L'huile réparatrice nourrit et revitalise les cheveux abîmés, apportant douceur et éclat. Utilisée régulièrement, elle aide à prévenir les pointes fourchues et les cassures, laissant les cheveux sains et brillants.</p>
+                      <div class="btn_main">
+                        <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Huile%20réparatrice%20pour%202,500F" class="acheter-maintenant" data-price="2500" data-product="Huile réparatrice">Acheter</a></div>
+                        <div class="seemore_bt"><a href="#">En stock</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="box_main">
+                      <h4 class="shirt_text">Shampooing</h4>
+                      <p class="price_text">Prix <span style="color: #262626;">3,000F</span></p>
+                      <div class="tshirt_img"><img src="images/Prod7.jpeg" alt="Shampooing"></div>
+                      <p style="color: #000;">Description: Ce shampooing nettoie en profondeur tout en nourrissant les cheveux. Sa formule douce est idéale pour un usage quotidien, laissant les cheveux frais, propres et revitalisés après chaque lavage.</p>
+                      <div class="btn_main">
+                        <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Shampooing%20pour%203,000F" class="acheter-maintenant" data-price="3000" data-product="Shampooing">Acheter</a></div>
+                        <div class="seemore_bt"><a href="#">En stock</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box_main">
+                    <h4 class="shirt_text">Pommade réparatrice</h4>
+                    <p class="price_text">Prix <span style="color: #262626;">7,000F</span></p>
+                    <div class="tshirt_img"><img src="images/Prod5.png" alt="Pommade réparatrice" style="max-width: 100%; height: auto;"></div>
+                    <p style="color: #000;">Description: Cette pommade répare efficacement les cheveux cassés et abîmés en leur redonnant force et vitalité. Sa formule enrichie en nutriments essentiels pénètre profondément pour revitaliser les mèches.</p>
+                    <div class="btn_main">
+                      <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Pommade%20réparatrice%20pour%207,000F" class="acheter-maintenant" data-price="7000" data-product="Pommade réparatrice">Acheter</a></div>
+                      <div class="seemore_bt"><a href="#">En stock</a></div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-      <i class="fa fa-angle-left"></i>
-    </a>
-    <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-      <i class="fa fa-angle-right"></i>
-    </a>
+
+    <!-- section de mode fin -->   
+<div class="btn_main">
+  <div class="voir_tous_bt">
+    <a href="Tous les produits.html" class="voir-tous">Voir tous les produits</a>
   </div>
 </div>
+<style>.voir_tous_bt {
+  text-align: center; /* Center the button horizontally */
+  margin: 20px 0; /* Add some space above and below the button */
+}
 
-        <!-- section de mode fin -->
+.voir_tous_bt .voir-tous {
+  display: inline-block; /* Allows for padding and margin adjustments */
+  font-size: 1.5em; /* Increase the font size */
+  padding: 15px 30px; /* Increase the padding for a larger button */
+  background-color: #28a745; /* Background color */
+  color: #fff; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+}
 
+.voir_tous_bt .voir-tous:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+</style>
+            
   <!-- Footer Section Start -->
-  <div class="footer_section layout_padding">
+  <div class="footer_section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <h4 class="information_text">Liens utiles</h4>
-          <div class="footer_menu">
-            <ul>
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">À propos de nous</a></li>
-              <li><a href="#">Nos produits</a></li>
-              <li><a href="#">Contactez-nous</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h4 class="information_text">Nos produits</h4>
-          <p>Crème chantilly, L'huile activatrice, Le sérum booster, La crème revitalisante</p>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h4 class="information_text">Contactez-nous</h4>
-          <p>WhatsApp: <a href="https://wa.me/22794284571">+227 94 28 45 71</a></p>
-          <p>Email: <a href="mailto:hassiabdoulkadrihamadou123@gmail.com">hassiabdoulkadrihamadou123@gmail.com</a></p>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h4 class="information_text">Suivez-nous</h4>
-          <div class="social_icon">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="footer_menu">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À propos de nous</a></li>
+          <li><a href="#">Nos produits</a></li>
+          <li><a href="https://wa.me/22794284571">Contactez-nous</a></li>
+        </ul>
+        <div class="social_icon">
+          <ul>
+              <li><a href="https://www.facebook.com/profile.php?id=61559287114358&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/afro9194?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://tiktok.com/@afrohair44" target="_blank"><i class="fa fa-tiktok"></i></a></li>
+          </ul>
       </div>
+<style>.social_icon {
+  text-align: center; /* Center the icons */
+  margin-top: 20px; /* Add space above the icons */
+}
+
+.social_icon ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  display: flex; /* Use flexbox to arrange items horizontally */
+  justify-content: center; /* Center the list items */
+}
+
+.social_icon li {
+  margin: 0 15px; /* Add space between icons */
+}
+
+.social_icon a {
+  color: #000; /* Change icon color */
+  font-size: 1.5em; /* Increase icon size */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.social_icon a:hover {
+  color: #28a745; /* Change color on hover */
+}
+</style>      
+        <div class="footer_copy">
+      <p>© 2024 Tous Droits Réservés. Conception par Abdoulahi Sani Adamou. Besoin d'un site magnifique pour booster votre business? Contactez-moi via <a href="https://wa.me/message/RYWE35UAMOF6N1" style="color: #25D366;">WhatsApp</a>.</p>
     </div>
   </div>
+</footer>
   <!-- Footer Section End -->
 
-  <!-- Javascript files-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script>
-    $(document).ready(function() {
-      // JavaScript functionalities for payments and sending messages to WhatsApp
-      $('.acheter-maintenant').on('click', function(e) {
-        e.preventDefault();
-        var product = $(this).data('product');
-        var price = $(this).data('price');
-        window.location.href = 'https://wa.me/22794284571?text=Je%20souhaite%20acheter%20' + encodeURIComponent(product) + '%20pour%20' + price + 'F';
-      });
+  
+<!-- Javascript files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/plugin.js"></script>
+<!-- sidebar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+   function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+   }
+   
+   function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+   }
+</script>
+
+  <!-- Add jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  document.querySelectorAll('.contact-button').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      const whatsappLink = "https://wa.me/22794284571?text=Salut%20je%20vous%20écris%20pour%20avoir%20des%20renseignements%20sur%20vos%20produits";
+      window.open(whatsappLink, '_blank');
     });
-  </script>
+  });
+</script>
+
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+</script
+
+ <!-- Custom JavaScript -->
+<script>
+   function openNav() {
+     document.getElementById("mySidenav").style.width = "250px";
+   }
+ 
+   function closeNav() {
+     document.getElementById("mySidenav").style.width = "0";
+   }
+ 
+   document.querySelectorAll('.acheter-maintenant').forEach(button => {
+     button.addEventListener('click', function (e) {
+       e.preventDefault();
+       let price = this.getAttribute('data-price');
+       let product = this.getAttribute('data-product');
+       let quantity = prompt('Veuillez entrer la quantité:');
+       if (quantity) {
+         let totalPrice = quantity * price;
+         alert(`Prix total: ${totalPrice} FCFA`);
+ 
+         let address = prompt('Veuillez entrer votre adresse de livraison:\nPays, Ville, Quartier, Numéro de téléphone');
+         if (address) {
+           let paymentMethod = prompt('Veuillez choisir votre méthode de paiement en sélectionnant soit numéro 1 2 3 4:\n1. Mynita\n2. Amanata\n3. Al Izza money\n4. Payer à la livraison');
+           let paymentNumber = '+22794284571';
+           let paymentMessage = `Salut, j'ai effectué le dépôt pour le produit (${product}), je vous envoie le reçu. Veuillez livrer mon colis à cette adresse: ${address}`;
+           let deliveryMessage = `Salut, je veux commander le produit (${product}). Je veux payer à la livraison, adresse: ${address}`;
+ 
+           if (paymentMethod >= 1 && paymentMethod <= 3) {
+             alert(`Veuillez payer avec le numéro: ${paymentNumber}`);
+             window.location.href = `https://wa.me/22794284571?text=${encodeURIComponent(paymentMessage)}`;
+           } else {
+             window.location.href = `https://wa.me/22794284571?text=${encodeURIComponent(deliveryMessage)}`;
+           }
+         }
+       }
+     });
+   });
+ </script> 
+</body>
+</html>
 </body>
 </html>

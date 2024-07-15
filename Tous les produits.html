@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/your/styles.css">
+    <title>Tous les Produits</title>
+</head>
+<style>.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px); /* Three columns */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tshirt_img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex: 1 1 calc(50% - 20px); /* Two columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        flex: 1 1 100%; /* One column */
+    }
+}
+
+.btn_main {
+    margin-top: 10px;
+}
+
+.buy_bt a {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.buy_bt a:hover {
+    background: #218838;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Tous les Produits</h1>
+        <div class="product-list">
+            <div class="product">
+                <h4 class="shirt_text">Crème chantilly</h4>
+                <p class="price_text">Prix <span style="color: #262626;">3,500F</span></p>
+                <div class="tshirt_img"><img src="images/Pro1.jpeg" alt="Crème chantilly" style="max-width: 100%; height: auto;"></div>
+                <p style="color: #000;">Description: Enrichie en huiles végétales et huiles essentielles, cette crème hydrate intensément...</p>
+                <div class="btn_main">
+                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Crème%20chantilly%20pour%203,500F" class="acheter-maintenant">Acheter</a></div>
+                </div>
+            </div>
+            <div class="product">
+                <h4 class="shirt_text">Huile activatrice</h4>
+                <p class="price_text">Prix <span style="color: #262626;">4,000F</span></p>
+                <div class="tshirt_img"><img src="images/Pro2.jpeg" alt="Huile activatrice" style="max-width: 100%; height: auto;"></div>
+                <p style="color: #000;">Description: Cette huile favorise la croissance des cheveux...</p>
+                <div class="btn_main">
+                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20L'huile%20activatrice%20pour%204,000F" class="acheter-maintenant">Acheter</a></div>
+                </div>
+            </div>
+            <div class="product">
+                <h4 class="shirt_text">Sérum pousse</h4>
+                <p class="price_text">Prix <span style="color: #262626;">3,000F</span></p>
+                <div class="tshirt_img"><img src="images/Pro3.jpeg" alt="Sérum pousse" style="max-width: 100%; height: auto;"></div>
+                <p style="color: #000;">Description: Ce sérum est conçu pour stimuler la croissance rapide des cheveux...</p>
+                <div class="btn_main">
+                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Sérum%20pousse%20pour%203,000F" class="acheter-maintenant">Acheter</a></div>
+                </div>
+            </div>
+            <div class="product">
+                <h4 class="shirt_text">Pousse booster</h4>
+                <p class="price_text">Prix <span style="color: #262626;">4,000F</span></p>
+                <div class="tshirt_img"><img src="images/Pro4.jpeg" alt="Pousse booster" style="max-width: 100%; height: auto;"></div>
+                <p style="color: #000;">Description: Ce produit nourrissant exceptionnel apporte force et volume...</p>
+                <div class="btn_main">
+                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Pousse%20booster%20pour%204,000F" class="acheter-maintenant">Acheter</a></div>
+                </div>
+            </div>
+            <div class="product">
+                <h4 class="shirt_text">Huile réparatrice</h4>
+                <p class="price_text">Prix <span style="color: #262626;">2,500F</span></p>
+                <div class="tshirt_img"><img src="images/Prod6.jpeg" alt="Huile réparatrice" style="max-width: 100%; height: auto;"></div>
+                <p style="color: #000;">Description: L'huile réparatrice nourrit et revitalise les cheveux abîmés...</p>
+                <div class="btn_main">
+                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Huile%20réparatrice%20pour%202,500F" class="acheter-maintenant">Acheter</a></div>
+                </div>
+            </div>
+            <div class="product">
+                <h4 class="shirt_text">Shampooing</h4>
+                <p class="price_text">Prix <span style="color: #262626;">3,000F</span></p>
+                <div class="tshirt_img"><img src="images/Prod7.jpeg" alt="Shampooing" style="max-width: 100%; height: auto;"></div>
+                <p style="color: #000;">Description: Ce shampooing nettoie en profondeur tout en nourrissant les cheveux...</p>
+                <div class="btn_main">
+                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Shampooing%20pour%203,000F" class="acheter-maintenant">Acheter</a></div>
+                </div>
+            </div>
+            <div class="product">
+                <h4 class="shirt_text">Pommade réparatrice</h4>
+                <p class="price_text">Prix <span style="color: #262626;">7,000F</span></p>
+                <div class="tshirt_img"><img src="images/Prod5.png" alt="Pommade réparatrice" style="max-width: 100%; height: auto;"></div>
+                <p style="color: #000;">Description: Cette pommade répare efficacement les cheveux cassés...</p>
+                <div class="btn_main">
+                    <div class="buy_bt"><a href="https://wa.me/22794284571?text=Je%20souhaite%20acheter%20Pommade%20réparatrice%20pour%207,000F" class="acheter-maintenant">Acheter</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Custom JavaScript -->
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+  
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  
+    document.querySelectorAll('.acheter-maintenant').forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        let price = this.getAttribute('data-price');
+        let product = this.getAttribute('data-product');
+        let quantity = prompt('Veuillez entrer la quantité:');
+        if (quantity) {
+          let totalPrice = quantity * price;
+          alert(`Prix total: ${totalPrice} FCFA`);
+  
+          let address = prompt('Veuillez entrer votre adresse de livraison:\nPays, Ville, Quartier, Numéro de téléphone');
+          if (address) {
+            let paymentMethod = prompt('Veuillez choisir votre méthode de paiement en sélectionnant soit numéro 1 2 3 4:\n1. Mynita\n2. Amanata\n3. Al Izza money\n4. Payer à la livraison');
+            let paymentNumber = '+22794284571';
+            let paymentMessage = `Salut, j'ai effectué le dépôt pour le produit (${product}), je vous envoie le reçu. Veuillez livrer mon colis à cette adresse: ${address}`;
+            let deliveryMessage = `Salut, je veux commander le produit (${product}). Je veux payer à la livraison, adresse: ${address}`;
+  
+            if (paymentMethod >= 1 && paymentMethod <= 3) {
+              alert(`Veuillez payer avec le numéro: ${paymentNumber}`);
+              window.location.href = `https://wa.me/22794284571?text=${encodeURIComponent(paymentMessage)}`;
+            } else {
+              window.location.href = `https://wa.me/22794284571?text=${encodeURIComponent(deliveryMessage)}`;
+            }
+          }
+        }
+      });
+    });
+  </script> 
+ </body>
+ </html>
+ </body>
+ </html>
+ 
